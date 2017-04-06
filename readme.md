@@ -31,8 +31,13 @@ composer update
 php artisan key:generate
 ```
 
-then add first user manually with tinker as this project
-doesn't allow users to registrate without logging in you can change it on
+after this migrate database and add default admin user
+``` 
+php artisan:migrate
+php artisan db:seed --class=adminUserAdder
+```
+
+this project doesn't allow users to registrate without logging in you can change it on
 RegisterController.php already commented needed part to change
 ## License
 
