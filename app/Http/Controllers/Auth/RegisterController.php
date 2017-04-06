@@ -35,7 +35,7 @@ class RegisterController extends Controller
      * @return void
      */
 
-    //auth guest eleki qeydiyyat olsunlar
+    //to allow registration change it to $this->middleware('guest');
     public function __construct()
     {
         $this->middleware('auth');
