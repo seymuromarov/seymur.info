@@ -21,5 +21,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/admin', 'AdminController@index')->name('admin');
-Route::resource('/admin/projects', 'ProjectController');
+
+Route::group(['middleware' => ['role:admin,access_backend']], function () {
+    Route::get('/admin', 'AdminController@index')->name('admin');
+    Route::resource('/admin/projects', 'ProjectController');
+});
