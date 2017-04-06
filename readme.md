@@ -36,6 +36,13 @@ after this migrate database and add default admin user
 php artisan:migrate
 php artisan db:seed --class=adminUserAdder
 ```
+default admin credentials 
+``` 
+email: admin@admin.com
+password :123456
+```
+
+
 
 this project doesn't allow users to registrate without logging in you can change it on
 RegisterController.php already commented needed part to change
