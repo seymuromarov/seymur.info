@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://seymur.info/sitemap.xml.
