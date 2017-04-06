@@ -6,7 +6,7 @@ This project includes code of seymur.info website.
 It also includes good looking material design admin panel.
 This project includes this packages: 
 
-#Requirements
+##Requirements
 * [Composer](https://getcomposer.org/)
 * [Laravel](https://laravel.com/)
 * [Roles](https://github.com/spatie/laravel-permission) Associate users with roles and permissions 
