@@ -44,3 +44,8 @@
 <script src="{{asset('js/material-dashboard.js')}}"></script>
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="{{asset('js/demo.js')}}"></script>
+<script>
+    window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
+</script>
