@@ -24,51 +24,7 @@
     <link rel="stylesheet" href="css/materialcards.css" type="text/css">
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css"/>
     <link href="css/palette.css" rel="stylesheet" type="text/css"/>
-    <style>
-        .github-corner:hover .octo-arm {
-            animation: octocat-wave 560ms ease-in-out
-        }
-
-        @keyframes octocat-wave {
-            0%, 100% {
-                transform: rotate(0)
-            }
-            20%, 60% {
-                transform: rotate(-25deg)
-            }
-            40%, 80% {
-                transform: rotate(10deg)
-            }
-        }
-
-        @media (max-width: 500px) {
-            .github-corner:hover .octo-arm {
-                animation: none
-            }
-
-            .github-corner .octo-arm {
-                animation: octocat-wave 560ms ease-in-out
-            }
-        }
-
-        .custom-progress-bar {
-            top:30vh;
-            bottom:30vh;
-            position:absolute;
-            right:40px;
-            background:rgba(255, 255, 255, 0.3);
-            width:30px;
-        }
-        .custom-progress-indicator {
-            background-color:rgba(255, 255, 255, 0.2);
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-        }
-    </style>
-    <!-- Scripts -->
-    <!--<script src="js/jquery-3.1.1.min.js"></script> -->
+    <link href="css/scrolltostyle.css" rel="stylesheet" type="text/css"/>
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -76,6 +32,7 @@
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/particles.min.js"></script>
+    <script src="js/jquery.scrolltostyle.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
 
@@ -195,7 +152,7 @@ result="goo"></fecolormatrix>
         <div class="type-wrap" style="max-height: 100px;">
             <div id="typed-strings">
                 <h3>Responsive websites.</h3>
-                <h3><em>Web</em> applications.</h3>
+                <h3>Web applications.</h3>
                 <h3>Mobile applications.</h3>
             </div>
         </div>
@@ -204,6 +161,18 @@ result="goo"></fecolormatrix>
         <a href="#about" class="scroll-down nav-link"></a>
     </div>
 </header>
+<a href="https://github.com/seymuromarov" class="github-corner" aria-label="View source on Github"
+   target="_blank">
+    <svg width="80" height="80" viewBox="0 0 250 250"
+         style="fill:#f44336; color:#ECEFF1; position: absolute; top: 0; border: 0; right: 0;"
+         aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
 <section id="about" class="default-primary-color">
     <div class="container">
         <div class="row">
@@ -300,17 +269,7 @@ result="goo"></fecolormatrix>
     {{--<div style="text-align: center">{{ $data->links() }}</div>--}}
 
 </section>
-<a href="https://github.com/seymuromarov" class="github-corner" aria-label="View source on Github"
-   target="_blank">
-    <svg width="80" height="80" viewBox="0 0 250 250"
-         style="fill:#f44336; color:#ECEFF1; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
+
 <section id="howicode">
     <div class="container">
         <div class="row">
@@ -352,25 +311,26 @@ result="goo"></fecolormatrix>
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <h3>You can contact me on</h3>
                     <ul class="list-inline social">
-                        <li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"
-                            style="animation-delay: 0s;"><a class="socialIcon" href="https://github.com/seymuromarov"><i
+                        <li class="os-animation animated shake" data-os-animation="shake"
+                            data-os-animation-delay="0s"
+                            style="animation-delay: 0s;"><a class="socialIcon"
+                                                            href="https://github.com/seymuromarov"><i
                                         class="fa fa-github fa-2x"></i></a></li>
-                        <li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"
+                        <li class="os-animation animated shake" data-os-animation="shake"
+                            data-os-animation-delay="0s"
                             style="animation-delay: 0s;"><a class="socialIcon"
                                                             href="https://twitter.com/omarovseymur"><i
                                         class="fa fa-twitter fa-2x"></i></a></li>
-                        <li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"
+                        <li class="os-animation animated shake" data-os-animation="shake"
+                            data-os-animation-delay="0s"
                             style="animation-delay: 0s;"><a class="socialIcon"
                                                             href="https://www.instagram.com/seymuromarov/"><i
                                         class="fa fa-instagram fa-2x"></i></a></li>
-                        <li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"
+                        <li class="os-animation animated shake" data-os-animation="shake"
+                            data-os-animation-delay="0s"
                             style="animation-delay: 0s;"><a class="socialIcon"
                                                             href="https://facebook.com/seko.omaroff"><i
                                         class="fa fa-facebook fa-2x"></i></a></li>
-                        {{--<li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"--}}
-                        {{--style="animation-delay: 0s;"><a class="socialIcon"--}}
-                        {{--href="https://it.linkedin.com/in/danielepedone"><i--}}
-                        {{--class="fa fa-linkedin-square fa-2x"></i></a></li>--}}
                     </ul>
                     <p>Copyright © Seymur Omarov 2017</p>
                     <p class="hiddentags">seymur omarov , seymur,Seymur,Omarov,portfolio,omarov seymur,seymur

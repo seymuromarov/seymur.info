@@ -38,7 +38,6 @@ body {
     font-size: 16px;
 }
 
-
 h1.major,
 h2.major,
 h3.major,
@@ -251,17 +250,23 @@ header .vert-text .scroll-down::before {
     padding-top: 8%;
 }
 
+/*mobile screens*/
 @media screen and (max-width: 550px) {
     .type-it {
         font-size: 2.3rem;
     }
-    .typed-cursor{
+
+    .typed-cursor {
         font-size: 2.3rem;
     }
 
     .ribbon::after {
         padding-top: 15%;
     }
+
+    /*.custom-progress-bar {*/
+        /*display: none;*/
+    /*}*/
 }
 
 .footer {
@@ -279,6 +284,7 @@ header .vert-text .scroll-down::before {
     padding: 50px 0;
     margin-top: -50px;
 }
+
 #howicoderow {
     margin-top: 2em;
 }
@@ -291,10 +297,11 @@ header .vert-text .scroll-down::before {
     padding: 50px 0 0;
 }
 
-.hiddentags{
+.hiddentags {
     display: none;
 }
-.typed-cursor{
+
+.typed-cursor {
     font-family: 'Montserrat', sans-serif;
     font-size: 4.7rem;
     opacity: 1;
@@ -302,33 +309,68 @@ header .vert-text .scroll-down::before {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-ms-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-o-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.typed-fade-out{
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-fade-out {
     opacity: 0;
     animation: 0;
     transition: opacity .25s;
@@ -337,3 +379,50 @@ header .vert-text .scroll-down::before {
 .type-wrap {
     display: none;
 }
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+    0%, 100% {
+        transform: rotate(0)
+    }
+    20%, 60% {
+        transform: rotate(-25deg)
+    }
+    40%, 80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+/*.custom-wrap {*/
+    /*position: relative;*/
+/*}*/
+
+/*.custom-progress-bar {*/
+    /*top: 30vh;*/
+    /*bottom: 30vh;*/
+    /*position: absolute;*/
+    /*right: 40px;*/
+    /*background: rgba(255, 99, 228, 0.3);*/
+    /*width: 30px;*/
+/*}*/
+
+/*.custom-progress-indicator {*/
+    /*background-color: #d32f2f;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+/*}*/
