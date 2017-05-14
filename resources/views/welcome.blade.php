@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Seymur Omarov's Portfolio. Freelancer web ( PHP - Laravel-CI,Javascript-Jquery) Developer ">
+    <meta name="description"
+          content="Seymur Omarov's Portfolio. Freelancer web ( PHP - Laravel-CI,Javascript-Jquery) Developer ">
     <meta name="keywords" content="Seymur Omarov,omarov,seymur,programmer,cv,developer,laravel,portfolio">
     <meta name="web_author" content="Seymur Omarov">
     <meta name="Robots" content="index, follow">
+    <meta name="yandex-verification" content="53f4f2683c352916"/>
     <title>Seymur | Portfolio</title>
 
     <!-- Fonts -->
@@ -22,19 +24,8 @@
     <link rel="stylesheet" href="css/materialcards.css" type="text/css">
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css"/>
     <link href="css/palette.css" rel="stylesheet" type="text/css"/>
-
-    <!-- Scripts -->
-    <!--<script src="js/jquery-3.1.1.min.js"></script> -->
-    <script
-            src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
-    <script src="js/jquery-migrate-3.0.0.min.js"></script>
-    <script src="js/typeit.min.js"></script>
-    <script src="js/particles.min.js"></script>
-
-
-    <style>.github-corner:hover .octo-arm {
+    <style>
+        .github-corner:hover .octo-arm {
             animation: octocat-wave 560ms ease-in-out
         }
 
@@ -58,7 +49,67 @@
             .github-corner .octo-arm {
                 animation: octocat-wave 560ms ease-in-out
             }
-        }</style>
+        }
+
+        .custom-progress-bar {
+            top:30vh;
+            bottom:30vh;
+            position:absolute;
+            right:40px;
+            background:rgba(255, 255, 255, 0.3);
+            width:30px;
+        }
+        .custom-progress-indicator {
+            background-color:rgba(255, 255, 255, 0.2);
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+        }
+    </style>
+    <!-- Scripts -->
+    <!--<script src="js/jquery-3.1.1.min.js"></script> -->
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            Typed.new("#typed", {
+                stringsElement: document.getElementById('typed-strings'),
+                typeSpeed: 30,
+                backDelay: 500,
+                loop: false,
+                contentType: 'html', // or text
+                // defaults to null for infinite loop
+                loopCount: null,
+                callback: function () {
+                    foo();
+                },
+                resetCallback: function () {
+                    newTyped();
+                }
+            });
+
+            var resetElement = document.querySelector('.reset');
+            if (resetElement) {
+                resetElement.addEventListener('click', function () {
+                    document.getElementById('typed')._typed.reset();
+                });
+            }
+
+        });
+
+        function newTyped() { /* A new typed object */
+        }
+
+    </script>
+
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -141,6 +192,14 @@ result="goo"></fecolormatrix>
     <div class="vert-text">
         <h3 class="type-it">I'm Seymur. I design & build</h3>
         <h3 id="type-it" class="type-it"></h3>
+        <div class="type-wrap" style="max-height: 100px;">
+            <div id="typed-strings">
+                <h3>Responsive websites.</h3>
+                <h3><em>Web</em> applications.</h3>
+                <h3>Mobile applications.</h3>
+            </div>
+        </div>
+        <span class="type-it" id="typed" style="white-space:pre;"></span>
     <!--{{--<h3>Web,Mobile,Software Developer</h3>--}} -->
         <a href="#about" class="scroll-down nav-link"></a>
     </div>
@@ -238,7 +297,7 @@ result="goo"></fecolormatrix>
             </div>
         @endfor
     </div>
-{{--<div style="text-align: center">{{ $data->links() }}</div>--}}
+    {{--<div style="text-align: center">{{ $data->links() }}</div>--}}
 
 </section>
 <a href="https://github.com/seymuromarov" class="github-corner" aria-label="View source on Github"
@@ -297,10 +356,12 @@ result="goo"></fecolormatrix>
                             style="animation-delay: 0s;"><a class="socialIcon" href="https://github.com/seymuromarov"><i
                                         class="fa fa-github fa-2x"></i></a></li>
                         <li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"
-                            style="animation-delay: 0s;"><a class="socialIcon" href="https://twitter.com/omarovseymur"><i
+                            style="animation-delay: 0s;"><a class="socialIcon"
+                                                            href="https://twitter.com/omarovseymur"><i
                                         class="fa fa-twitter fa-2x"></i></a></li>
                         <li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"
-                            style="animation-delay: 0s;"><a class="socialIcon" href="https://www.instagram.com/seymuromarov/"><i
+                            style="animation-delay: 0s;"><a class="socialIcon"
+                                                            href="https://www.instagram.com/seymuromarov/"><i
                                         class="fa fa-instagram fa-2x"></i></a></li>
                         <li class="os-animation animated shake" data-os-animation="shake" data-os-animation-delay="0s"
                             style="animation-delay: 0s;"><a class="socialIcon"
@@ -312,46 +373,27 @@ result="goo"></fecolormatrix>
                         {{--class="fa fa-linkedin-square fa-2x"></i></a></li>--}}
                     </ul>
                     <p>Copyright © Seymur Omarov 2017</p>
-                    <p class="hiddentags">seymur omarov , seymur,Seymur,Omarov,portfolio,omarov seymur,seymur omarov,cv,resume,seymur omarov cv,seymur cv,seymur omarov developer</p>
+                    <p class="hiddentags">seymur omarov , seymur,Seymur,Omarov,portfolio,omarov seymur,seymur
+                        omarov,cv,resume,seymur omarov cv,seymur cv,seymur omarov developer</p>
                 </div>
             </div>
         </div>
     </footer>
 </section>
-<script>
-    $('#type-it').typeIt({
-        speed: 50,
-        lifeLike: true,
-        autoStart: false
-    })
-        .tiType('Responsive websites.')
-        .tiSettings({speed: 100})
-        .tiDelete()
-        .tiSettings({speed: 130})
-        .tiType('Web')
-        .tiSettings({speed: 100})
-        .tiType(' applicatiio')
-        .tiSettings({speed: 140})
-        .tiDelete(2)
-        .tiType('ons. ')
-        .tiSettings({speed: 70})
-        .tiDelete()
-        .tiType('Mobile applications.')
 
-</script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/materialCards.js"></script>
 <script src="js/init.js"></script>
-<script>
-    $(window).load(function () {
-        $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-        $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
-            default_offset_pct: 0.3,
-            orientation: 'vertical'
-        });
-    });
-</script>
+{{--<script>--}}
+{{--$(window).load(function () {--}}
+{{--$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});--}}
+{{--$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({--}}
+{{--default_offset_pct: 0.3,--}}
+{{--orientation: 'vertical'--}}
+{{--});--}}
+{{--});--}}
+{{--</script>--}}
 
 
 </body>

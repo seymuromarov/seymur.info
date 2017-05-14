@@ -255,6 +255,9 @@ header .vert-text .scroll-down::before {
     .type-it {
         font-size: 2.3rem;
     }
+    .typed-cursor{
+        font-size: 2.3rem;
+    }
 
     .ribbon::after {
         padding-top: 15%;
@@ -289,5 +292,48 @@ header .vert-text .scroll-down::before {
 }
 
 .hiddentags{
+    display: none;
+}
+.typed-cursor{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.7rem;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}
+
+.type-wrap {
     display: none;
 }
