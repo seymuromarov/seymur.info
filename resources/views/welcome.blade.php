@@ -21,7 +21,7 @@
     <link rel="stylesheet prefetch" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/materialcards.css" type="text/css">
-    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css"/>
+    {{--<link href="css/twentytwenty.css" rel="stylesheet" type="text/css"/>--}}
     <link href="css/palette.css" rel="stylesheet" type="text/css"/>
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -110,7 +110,7 @@
                 <li><a class="nav-link" href="#about">About</a></li>
                 <li><a class="nav-link" href="#projects">Projects</a></li>
                 <li><a class="nav-link" href="#packages">Packages</a></li>
-                <li><a class="nav-link" href="#howicode">How I Code</a></li>
+                {{--<li><a class="nav-link" href="#howicode">How I Code</a></li>--}}
                 <li><a class="nav-link" href="#footer">Contacts</a></li>
             </ul>
         </div>
@@ -267,7 +267,8 @@
                     </div>
                 </div>
                 <div class="card-middle" id="card-middle1">
-                    <h5 class="more">Laravel api for generating random strings,floats,integers,arrays and etc. Just generate what you need with Randomcrap.</h5>
+                    <h5 class="more">Laravel api for generating random strings,floats,integers,arrays and etc. Just
+                        generate what you need with Randomcrap.</h5>
                 </div>
                 <div class="card-bottom text-center">
                     <h2 class="card-title">RandomCrap</h2>
@@ -315,7 +316,8 @@
                     </div>
                 </div>
                 <div class="card-middle" id="card-middle3">
-                    <h5 class="more">Laravel api for getting Currency rates of Central Bank of Azerbaijan You can get all currency information or search by Currency Code and get One.</h5>
+                    <h5 class="more">Laravel api for getting Currency rates of Central Bank of Azerbaijan You can get
+                        all currency information or search by Currency Code and get One.</h5>
                 </div>
                 <div class="card-bottom text-center">
                     <h2 class="card-title">CBAR Currency</h2>
@@ -323,50 +325,42 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function packageOpen(id) {
-            $('#card-middle' + id).slideToggle();
-            $('#close' + id).toggleClass('closeRotate');
-        }
-    </script>
-
 </section>
 
 
-<section id="howicode">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <h2 class="major primary-text-color">How I Code</h2>
-            </div>
-        </div>
+{{--<section id="howicode">--}}
+{{--<div class="container">--}}
+{{--<div class="row">--}}
+{{--<div class="col-md-4 col-md-offset-4 text-center">--}}
+{{--<h2 class="major primary-text-color">How I Code</h2>--}}
+{{--</div>--}}
+{{--</div>--}}
 
 
-        <div class="row" class="howicoderow">
-            <div class="col-md-10 col-xs-10 col-sm-10 col-lg-10  col-sm-offset-1 col-xs-offset-1 col-lg-offset-1 col-md-offset-1">
-                <div class="twentytwenty-container ">
-                    <img alt="code" src="images/mycode_cr.png"/>
-                    <img alt="design" src="images/work_cr.png"/>
-                </div>
-            </div>
-            <script src="js/jquery.event.move.js"></script>
-            <script src="js/jquery.twentytwenty.js"></script>
+{{--<div class="row" class="howicoderow">--}}
+{{--<div class="col-md-10 col-xs-10 col-sm-10 col-lg-10  col-sm-offset-1 col-xs-offset-1 col-lg-offset-1 col-md-offset-1">--}}
+{{--<div class="twentytwenty-container ">--}}
+{{--<img alt="code" src="images/mycode_cr.png"/>--}}
+{{--<img alt="design" src="images/work_cr.png"/>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--<script src="js/jquery.event.move.js"></script>--}}
+{{--<script src="js/jquery.twentytwenty.js"></script>--}}
 
-            <script>
-                $(document).ready(function () {
-                    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
-                    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
-                        default_offset_pct: 0.3,
-                        orientation: 'vertical'
-                    });
-                });
-            </script>
-        </div>
+{{--<script>--}}
+{{--$(document).ready(function () {--}}
+{{--$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});--}}
+{{--$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({--}}
+{{--default_offset_pct: 0.3,--}}
+{{--orientation: 'vertical'--}}
+{{--});--}}
+{{--});--}}
+{{--</script>--}}
+{{--</div>--}}
 
 
-    </div>
-</section>
+{{--</div>--}}
+{{--</section>--}}
 {{--<div class="ribbon"></div>--}}
 <section id="footer" class="default-primary-color">
     <footer class="footer">
@@ -409,16 +403,11 @@
 <script src="js/particles.js"></script>
 <script src="js/materialCards.js"></script>
 <script src="js/init.js"></script>
-{{--<script>--}}
-{{--$(window).load(function () {--}}
-{{--$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});--}}
-{{--$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({--}}
-{{--default_offset_pct: 0.3,--}}
-{{--orientation: 'vertical'--}}
-{{--});--}}
-{{--});--}}
-{{--</script>--}}
-
-
+<script>
+    function packageOpen(id) {
+        $('#card-middle' + id).slideToggle();
+        $('#close' + id).toggleClass('closeRotate');
+    }
+</script>
 </body>
 </html>
