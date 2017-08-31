@@ -19,12 +19,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="css/bootstrap.min.css">
     <link rel="stylesheet prefetch" href="css/animate.min.css">
-    {{--<link rel="stylesheet" href="css/loading.css">--}}
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/materialcards.css" type="text/css">
     <link href="css/twentytwenty.css" rel="stylesheet" type="text/css"/>
     <link href="css/palette.css" rel="stylesheet" type="text/css"/>
-    <link href="css/scrolltostyle.css" rel="stylesheet" type="text/css"/>
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -32,7 +30,6 @@
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/particles.min.js"></script>
-    <script src="js/jquery.scrolltostyle.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
 
@@ -45,7 +42,7 @@
                 // defaults to null for infinite loop
                 loopCount: null,
                 callback: function () {
-                    foo();
+//                    foo();
                 },
                 resetCallback: function () {
                     newTyped();
@@ -86,7 +83,7 @@
     </script>
 </head>
 
-<body onload="loading()">
+<body onload="">
 
 <script>
 
@@ -94,34 +91,8 @@
         setTimeout(showPage, 5000);
     }
 
-    function showPage() {
-//        document.getElementById("loader").style.display = "none";
-//        document.getElementById("main").style.display = "block";
-    }
 </script>
 
-<!--<div  id="loader" class="game-loader">
-<div class="game-loader__planet">
-<div class="loader-radius1"></div>
-<div class="loader-radius2"></div>
-<div class="loader-radius3"></div>
-<div class="loader-radius4"></div>
-<div class="loader-mini1"></div>
-<div class="loader-mini2"></div>
-<div class="loader-mini3"></div>
-<div class="loader-mini4"></div>
-<svg class="svg-mess" xmlns="" version="1.1">
-<defs>
-<filter id="goo">
-<fegaussianblur in="SourceGraphic" stddeviation="15" result="blur"></fegaussianblur>
-<fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 26 -7"
-result="goo"></fecolormatrix>
-<feblend in="SourceGraphic" in2="goo"></feblend>
-</filter>
-</defs>
-</svg>
-</div>
-</div> -->
 <nav class="navbar navbar-default navbar-fixed-top blue-nav-color" id="navbar" style="display: none;">
     <div class="container">
         <div class="navbar-header">
@@ -138,6 +109,7 @@ result="goo"></fecolormatrix>
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="nav-link" href="#about">About</a></li>
                 <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#packages">Packages</a></li>
                 <li><a class="nav-link" href="#howicode">How I Code</a></li>
                 <li><a class="nav-link" href="#footer">Contacts</a></li>
             </ul>
@@ -269,6 +241,98 @@ result="goo"></fecolormatrix>
     {{--<div style="text-align: center">{{ $data->links() }}</div>--}}
 
 </section>
+
+<section class="container" id="packages">
+    <div class="row" style="margin-right: 0px;margin-left: 0px;">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            <h2 class="major primary-text-color">Packages</h2>
+        </div>
+    </div>
+    <div style="margin: 0;padding: 0;" class="row">
+
+        <div class="col-md-4 col-xs-12 col-sm-6">
+            <div class="cardPackage">
+                <div class="card-top">
+                    <a href="https://github.com/seymuromarov/randomcrap-laravel">
+                        <div class="overlay">
+                            <h1>OPEN</h1>
+                        </div>
+                    </a>
+                    <img class="card-img"
+                         src="https://airnativeextensions.com/images/extensions/icons/ane-package-icon.png"/>
+                </div>
+                <div class="triangle">
+                    <div class="circle-button" id="circleDrop" onclick="packageOpen(1)"><img class="close" id="close1"
+                                                                                             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg"/>
+                    </div>
+                </div>
+                <div class="card-middle" id="card-middle1">
+                    <h5 class="more">Laravel api for generating random strings,floats,integers,arrays and etc. Just generate what you need with Randomcrap.</h5>
+                </div>
+                <div class="card-bottom text-center">
+                    <h2 class="card-title">RandomCrap</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-6">
+            <div class="cardPackage">
+                <div class="card-top">
+                    <a href="https://github.com/seymuromarov/api-clockworksms">
+                        <div class="overlay">
+                            <h1>OPEN</h1>
+                        </div>
+                    </a>
+                    <img class="card-img"
+                         src="https://airnativeextensions.com/images/extensions/icons/ane-package-icon.png"/>
+                </div>
+                <div class="triangle">
+                    <div class="circle-button" id="circleDrop" onclick="packageOpen(2)"><img class="close" id="close2"
+                                                                                             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg"/>
+                    </div>
+                </div>
+                <div class="card-middle" id="card-middle2">
+                    <h5 class="more">Laravel api for sending messages and checking balance with ClockWorkSms.</h5>
+                </div>
+                <div class="card-bottom text-center">
+                    <h2 class="card-title">Clock Work Sms</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-6">
+            <div class="cardPackage">
+                <div class="card-top">
+                    <a href="https://github.com/seymuromarov/cbar-currency">
+                        <div class="overlay">
+                            <h1>OPEN</h1>
+                        </div>
+                    </a>
+                    <img class="card-img"
+                         src="https://airnativeextensions.com/images/extensions/icons/ane-package-icon.png"/>
+                </div>
+                <div class="triangle">
+                    <div class="circle-button" id="circleDrop" onclick="packageOpen(3)"><img class="close" id="close3"
+                                                                                             src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg"/>
+                    </div>
+                </div>
+                <div class="card-middle" id="card-middle3">
+                    <h5 class="more">Laravel api for getting Currency rates of Central Bank of Azerbaijan You can get all currency information or search by Currency Code and get One.</h5>
+                </div>
+                <div class="card-bottom text-center">
+                    <h2 class="card-title">CBAR Currency</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function packageOpen(id) {
+            $('#card-middle' + id).slideToggle();
+            $('#close' + id).toggleClass('closeRotate');
+        }
+    </script>
+
+</section>
+
 
 <section id="howicode">
     <div class="container">
