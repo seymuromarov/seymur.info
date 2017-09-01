@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description"
-          content="Seymur Omarov's Portfolio. Freelancer web ( PHP - Laravel-CI,Javascript-Jquery) Developer ">
+          content="Seymur Omarov 's Portfolio. Freelancer web ( PHP - Laravel-CI,Javascript-ES6-Jquery-NodeJS),C#,C++,Android Developer">
     <meta name="keywords" content="Seymur Omarov,omarov,seymur,programmer,cv,developer,laravel,portfolio">
     <meta name="web_author" content="Seymur Omarov">
     <meta name="Robots" content="index, follow">
     <meta name="yandex-verification" content="53f4f2683c352916"/>
-    <title>Seymur | Portfolio</title>
-
+    <title>Seymur Omarov - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700">
@@ -153,14 +153,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4  text-center">
+            <div itemscope itemtype="http://schema.org/CreativeWork" class="col-md-4  text-center">
                 <div class="service-item os-animation animated fadeInUp" data-os-animation="fadeInUp"
                      data-os-animation-delay="0s" style="animation-delay: 0s;">
                     <i class="service-icon fa fa-user"></i>
                     <h4>
                         Who I am
                     </h4>
-                    <p>My name is Seymur and I am a web and software developer.
+                    <p itemprop="author" itemscope itemtype="http://schema.org/Person">My full name is <span
+                                itemprop="name"> Seymur Omarov</span> and I am a web and software developer.
                         I started when I was very young to develop apps in Pascal, expanding my knowledge to all the
                         other web system and achieving eventually more elaborated structures.</p>
                 </div>
@@ -258,11 +259,12 @@
                             <h1>OPEN</h1>
                         </div>
                     </a>
-                    <img class="card-img"
+                    <img class="card-img" alt="package"
                          src="https://airnativeextensions.com/images/extensions/icons/ane-package-icon.png"/>
                 </div>
                 <div class="triangle">
                     <div class="circle-button" id="circleDrop" onclick="packageOpen(1)"><img class="close" id="close1"
+                                                                                             alt="+"
                                                                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg"/>
                     </div>
                 </div>
@@ -283,11 +285,12 @@
                             <h1>OPEN</h1>
                         </div>
                     </a>
-                    <img class="card-img"
+                    <img class="card-img" alt="package"
                          src="https://airnativeextensions.com/images/extensions/icons/ane-package-icon.png"/>
                 </div>
                 <div class="triangle">
                     <div class="circle-button" id="circleDrop" onclick="packageOpen(2)"><img class="close" id="close2"
+                                                                                             alt="+"
                                                                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg"/>
                     </div>
                 </div>
@@ -307,11 +310,12 @@
                             <h1>OPEN</h1>
                         </div>
                     </a>
-                    <img class="card-img"
+                    <img class="card-img" alt="package"
                          src="https://airnativeextensions.com/images/extensions/icons/ane-package-icon.png"/>
                 </div>
                 <div class="triangle">
                     <div class="circle-button" id="circleDrop" onclick="packageOpen(3)"><img class="close" id="close3"
+                                                                                             alt="+"
                                                                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/324479/close.svg"/>
                     </div>
                 </div>
@@ -389,20 +393,28 @@
                             style="animation-delay: 0s;"><a class="socialIcon"
                                                             href="https://facebook.com/seko.omaroff"><i
                                         class="fa fa-facebook fa-2x"></i></a></li>
+                        <li class="os-animation animated shake" data-os-animation="shake"
+                            data-os-animation-delay="0s"
+                            style="animation-delay: 0s;"><a class="socialIcon"
+                                                            href="https://www.linkedin.com/in/seymuromarov/"><i
+                                        class="fa fa-linkedin fa-2x"></i></a></li>
                     </ul>
                     <p>Copyright © Seymur Omarov 2017</p>
                     <p class="hiddentags">seymur omarov , seymur,Seymur,Omarov,portfolio,omarov seymur,seymur
                         omarov,cv,resume,seymur omarov cv,seymur cv,seymur omarov developer</p>
+                    <h1 class="hiddentags">
+                        Seymur,Omarov,Seymur Omarov CV,cv,portfolio,Seymur Omarov Portfolio,Resume
+                    </h1>
                 </div>
             </div>
         </div>
     </footer>
 </section>
 
-<script src="js/bootstrap.min.js"></script>
+{{--<script async src="js/bootstrap.min.js"></script>--}}
 <script src="js/particles.js"></script>
-<script src="js/materialCards.js"></script>
-<script src="js/init.js"></script>
+<script async src="js/materialCards.js"></script>
+<script async src="js/init.js"></script>
 <script>
     function packageOpen(id) {
         $('#card-middle' + id).slideToggle();
