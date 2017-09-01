@@ -172,8 +172,6 @@ header .vert-text .scroll-down::before {
     /*color: white;*/
 }
 
-
-
 #projects .major {
     border-bottom: solid 2px #33A9B7;
 }
@@ -273,7 +271,7 @@ header .vert-text .scroll-down::before {
     }
 
     /*.custom-progress-bar {*/
-        /*display: none;*/
+    /*display: none;*/
     /*}*/
 }
 
@@ -415,26 +413,25 @@ header .vert-text .scroll-down::before {
 }
 
 /*.custom-wrap {*/
-    /*position: relative;*/
+/*position: relative;*/
 /*}*/
 
 /*.custom-progress-bar {*/
-    /*top: 30vh;*/
-    /*bottom: 30vh;*/
-    /*position: absolute;*/
-    /*right: 40px;*/
-    /*background: rgba(255, 99, 228, 0.3);*/
-    /*width: 30px;*/
+/*top: 30vh;*/
+/*bottom: 30vh;*/
+/*position: absolute;*/
+/*right: 40px;*/
+/*background: rgba(255, 99, 228, 0.3);*/
+/*width: 30px;*/
 /*}*/
 
 /*.custom-progress-indicator {*/
-    /*background-color: #d32f2f;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
+/*background-color: #d32f2f;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*left: 0;*/
+/*width: 100%;*/
 /*}*/
-
 
 .cardPackage {
     position: relative;
@@ -442,10 +439,11 @@ header .vert-text .scroll-down::before {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border-radius: 0.75em;
     padding: 0;
-    margin-top: 15px;
+    margin-bottom: 2.0em;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
+
 .cardPackage:nth-child(even) {
     /*margin: 0 1em;*/
 }
@@ -456,6 +454,7 @@ header .vert-text .scroll-down::before {
     border-top-left-radius: 0.75em;
     border-top-right-radius: 0.75em;
 }
+
 .card-top .card-img {
     display: block;
     margin-left: auto;
@@ -463,6 +462,7 @@ header .vert-text .scroll-down::before {
     height: 10em;
     width: auto;
 }
+
 .card-top .overlay {
     display: block;
     position: absolute;
@@ -479,6 +479,7 @@ header .vert-text .scroll-down::before {
     transition: all 700ms ease;
     opacity: 0;
 }
+
 .card-top .overlay h1 {
     text-align: center;
     font-weight: 500;
@@ -488,6 +489,7 @@ header .vert-text .scroll-down::before {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
 .card-top .overlay:hover, .card-top .overlay:focus {
     opacity: 1;
 }
@@ -509,6 +511,7 @@ header .vert-text .scroll-down::before {
     background: #efefef;
     padding: 2em 1em 1em 1em;
 }
+
 .card-middle .more {
     font-family: font-family: Work Sans;;
     font-weight: 400;
@@ -520,6 +523,7 @@ header .vert-text .scroll-down::before {
     border-bottom-left-radius: 0.75em;
     border-bottom-right-radius: 0.75em;
 }
+
 .card-bottom .card-title {
     font-weight: 100;
 }
@@ -541,12 +545,14 @@ header .vert-text .scroll-down::before {
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
 }
+
 .circle-button .close {
     -webkit-transition: -webkit-transform 400ms ease;
     transition: -webkit-transform 400ms ease;
     transition: transform 400ms ease;
     transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
+
 .circle-button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.275);
 }

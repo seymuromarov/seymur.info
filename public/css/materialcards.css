@@ -5,7 +5,7 @@
 @keyframes fa-spin-fast{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}
     100%{-webkit-transform:rotate(359deg);transform:rotate(359deg);}
 }
-.material-card{position:relative;height:0;padding-bottom:calc(100% - 16px);margin-bottom:6.6em;}
+.material-card{position:relative;height:0;padding-bottom:calc(100% - 16px);margin-bottom:2.6em;}
 .material-card h2{position:absolute;top:calc(66.8%);left:0;width:100%;padding:10px 16px;color:#fff;font-size:1.4em;line-height:1.6em;margin:0;z-index:10;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
 .material-card h2 span{display:block;}
 .material-card h2 strong{font-weight:400;display:block;font-size:.8em;}
